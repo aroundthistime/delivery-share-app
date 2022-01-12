@@ -1,4 +1,5 @@
 package com.deliverysharerefactoring;
+import android.os.Bundle; //react navigation
 
 import com.facebook.react.ReactActivity;
 
@@ -11,5 +12,10 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     return "deliveryShareRefactoring";
+  }
+
+  @Override //react navigation
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
   }
 }
